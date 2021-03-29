@@ -17,35 +17,56 @@
   <main>
     <div class="container-left">
       <div class="logo">
-        <img src="img/logo-small.svg" alt="">
+        <img src="img/logo-small.svg" alt="logo">
+        <img id="no" src="img/home.svg" alt="home">
+        <img id="no" src="img/search.svg" alt="search">
+        <img id="no" src="img/libreria.svg" alt="libreria">
         <h3>Spotify</h3>
       </div>
       <!-- first menu -->
       <div class="first-menu"> 
         <ul>
-          <li>Home</li>
-          <li>Cerca</li>
-          <li>La tua libreria</li>
+          <li>
+            <img src="img/home.svg" alt="home">
+            Home
+          </li>
+          <li>
+            <img src="img/search.svg" alt="search">
+            Cerca
+          </li>
+          <li>
+            <img src="img/libreria.svg" alt="libreria">
+            La tua libreria
+          </li>
         </ul>
       </div>
       <!-- second menu -->
-      <div class="playlist">
-        <h4>PLAYLIST</h4>
         <div class="crea-playlist">
+          <h4>PLAYLIST</h4>
+          <i class="fas fa-plus-square"></i>
           Crea Playlist
         </div>
-        <ul>
-          <li>Nome Playlist</li>
-          <li>Nome Playlist</li>
-          <li>Nome Playlist</li>
-          <li>Nome Playlist</li>
-          <li>Nome Playlist</li>
-        </ul>
+      <div class="playlist">
+        <div class="scroll-playlist">
+          <ul>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+          </ul>
+        </div>
       </div>
       <!-- third menu -->
       <div class="user">
-        <p>Installa app</p>
-        <h5>John Doe</h5>
+        <p>
+          <img src="img/download.svg" alt="download">
+          Installa app
+        </p>
+        <h5>
+          <img src="img/profile.svg" alt="profile">
+          John Doe
+        </h5>
       </div>
     </div>
 
@@ -107,12 +128,38 @@
 
   <footer>
     <div class="play">
-      <div>ascoltando</div>
-      <div>
-        <div>Bottoni</div>
-        <div>time music</div>
+      <div class="sentendo">
+        <img src="img/sinister.jpeg" alt="sinister-album">
+        <div>
+          <h4>Sinister</h4>
+          <p>Brano Nome</p>
+        </div>
+        <span>
+          <i class="far fa-heart"></i>
+          <i class="far fa-folder"></i>
+        </span>
       </div>
-      <div>volumen</div>
+      <div class="control-music">
+        <div class="items-control">
+          <i class="fas fa-random"></i>
+          <i class="fas fa-step-backward"></i>
+          <i class="far fa-play-circle"></i>
+          <i class="fas fa-step-forward"></i>
+          <i class="fas fa-redo-alt"></i>
+        </div>
+        <div class="time">
+          <div></div>
+        </div>
+        
+      </div>
+      <div class="volume">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-desktop"></i>
+        <i class="fas fa-volume-up"></i>
+        <div class="barra-volume">
+          <div class="barra-volume-move"></div>
+        </div>
+      </div>
     </div>
   </footer>
 </body>
