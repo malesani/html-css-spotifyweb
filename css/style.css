@@ -74,7 +74,7 @@ main{
 .first-menu ul li img{
   width: 27px;
   vertical-align: middle;
-}
+}  
 
   /* container-left second menu */
 .playlist{
@@ -190,15 +190,13 @@ main{
   min-width: 157px;
   max-width: 350px;
   height: 150px;
-  border: solid 0.5px white;
   display: inline-block;
   margin-right: 1%;
   margin-bottom: 1%;
+  text-align: center;
 }
-
-.contenuto-list .riga .album.circle{
-  border-radius: 50%;
-  max-width: 157px;
+.contenuto-list .riga .album img{
+  width: 100%;
 }
 
 .contenuto-list p{
@@ -310,6 +308,30 @@ padding: 0 5px;
   border-radius: 1.5px;
   background-color: #C1C1C1;
 }
+
+/* animation */
+.mouse-white:hover{
+  color: white;
+}
+
+.border-green:hover{
+  border-left:#ADFF2F solid 2px;
+
+}
+
+.mouse-green:hover{
+  background-color: #435E13;
+}
+
+.mouse-font:hover{
+  transition: 1s;
+  font-size: 20px;
+}
+.mouse-i:hover{
+  transition: 1s;
+  font-size: 1000px;
+}
+
 
 
 /* medi q */
