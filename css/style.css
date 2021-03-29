@@ -194,9 +194,21 @@ main{
   margin-right: 1%;
   margin-bottom: 1%;
   text-align: center;
+  position: relative;
 }
+
+.contenuto-list .riga .album i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: white;
+}
+
 .contenuto-list .riga .album img{
   width: 100%;
+  object-fit: cover;
 }
 
 .contenuto-list p{
@@ -279,6 +291,9 @@ padding: 0 5px;
   height: 4px;
   border-radius: 1.5px;
   background-color: #C1C1C1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 /* container right */
@@ -307,6 +322,19 @@ padding: 0 5px;
   height: 4px;
   border-radius: 1.5px;
   background-color: #C1C1C1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#pallino{
+  width: 10px;
+  height: 10px;
+  border: solid 0.5px white;
+  border-radius: 50px;
+  background-color: white;
+  
 }
 
 /* animation */
@@ -316,23 +344,22 @@ padding: 0 5px;
 
 .border-green:hover{
   border-left:#ADFF2F solid 2px;
-
 }
 
-.mouse-green:hover{
+.play .control-music .time div:hover{
   background-color: #435E13;
 }
-
+.play .volume .barra-volume-move:hover{
+  background-color: #435E13;
+}
 .mouse-font:hover{
   transition: 1s;
   font-size: 20px;
 }
-.mouse-i:hover{
-  transition: 1s;
-  font-size: 1000px;
+.play .control-music .items-control i.fa-play-circle:hover{
+  transition: 0.5s;
+  font-size: 28px;
 }
-
-
 
 /* medi q */
 @media (max-width: 800px){
