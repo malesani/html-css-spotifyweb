@@ -60,7 +60,7 @@ main{
 
 .logo img{
   width: 20%;
-  min-width: 40px;
+  min-width: 30px;
   padding-right: 5px;
 }
 
@@ -75,6 +75,9 @@ main{
   width: 27px;
   vertical-align: middle;
 }  
+.casita{
+  border-left:#ADFF2F solid 2px;
+}
 
   /* container-left second menu */
 .playlist{
@@ -129,7 +132,6 @@ main{
   overflow: auto;
   background-color: #141922;
   padding-top: 70px;
-
 }
 
 /* container upgrade */
@@ -174,8 +176,19 @@ main{
 }
 
 .contenuto-list .nav-bar ul li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   padding: 0 10px;
   text-align: center;
+}
+
+.border-bottom{
+  width: 25px;
+  margin-top: 2px;
+  border-bottom: solid 2px #ADFF2F;
+  display: none;
 }
 
 /* righe-albums */
@@ -334,7 +347,6 @@ padding: 0 5px;
   border: solid 0.5px white;
   border-radius: 50px;
   background-color: white;
-  
 }
 
 /* animation */
@@ -344,6 +356,11 @@ padding: 0 5px;
 
 .border-green:hover{
   border-left:#ADFF2F solid 2px;
+}
+
+.mouse-white:hover + .border-bottom{
+  display: block;
+  
 }
 
 .play .control-music .time div:hover{
